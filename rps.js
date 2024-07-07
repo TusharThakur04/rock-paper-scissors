@@ -14,7 +14,6 @@ switch(a){
 
 }
 
-// console.log(getComputerChoice()) ;
 
  function getHumanChoice(){
     let b = prompt("rock , paper or scissors").toLowerCase();
@@ -22,7 +21,6 @@ switch(a){
 
  }
 
-// console.log(getHumanChoice()) ;
 
 function playRound(computerChoice , humanChoice ){
     if(computerChoice === humanChoice)
@@ -60,7 +58,6 @@ function playRound(computerChoice , humanChoice ){
 
 }
 
-// playRound(getComputerChoice , getHumanChoice);
 
 function playGame(){
     for(let i = 0 ; i < 5 ; i++){
