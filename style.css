@@ -1,0 +1,34 @@
+.hero{
+    background-color: beige;
+    height: 100px;
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.hero span{
+    font-weight:10;
+    margin-left: 10px;
+}
+
+.choose{
+    margin-top: 3px;
+    background-color: rgba(238, 227, 198, 0.575);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    gap: 200px;
+    align-items: center;
+    
+
+}
+.choose button{
+    height: 150px;
+    width: 200px;
+    border: 5px solid rgba(230, 230, 250, 0.644);
+    border-radius: 10px;
+    font-size:x-large;
+
+
+}

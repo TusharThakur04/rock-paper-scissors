@@ -1,5 +1,6 @@
 let computerScore = 0
 let humanScore = 0 ;
+let humanChoice ;
 
 function getComputerChoice(){
     let a = Math.floor(Math.random() * 3) 
@@ -15,8 +16,10 @@ switch(a){
 }
 
 function playRound(computerChoice , humanChoice ){
-    if(computerChoice === humanChoice)
-        console.log("Draw") ;
+    let computerChoice = getComputerChoice() ;
+    if(computerChoice === humanChoice){
+        
+    }
     else if (computerChoice==="rock"){
         if(humanChoice==="paper"){
             humanScore++ ;
@@ -49,16 +52,9 @@ function playRound(computerChoice , humanChoice ){
         }
 
 }
-
-
-
-let computerChoice = getComputerChoice() ;
-let humanChoice ;
-
-playRound(computerChoice , humanChoice) ;
         
     
-console.log(`Final Scores: Your: ${humanScore}, Computer: ${computerScore}`);
+// console.log(`Final Scores: Your: ${humanScore}, Computer: ${computerScore}`);
 
 const rock = document.querySelector("#rock") ;
 const paper = document.querySelector("#paper") ;
