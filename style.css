@@ -1,10 +1,10 @@
 .hero{
     background-color: beige;
-    height: 100px;
+    height: 90px;
     font-size: xx-large;
     font-weight: bolder;
     text-align: center;
-    padding-top: 30px;
+    padding-top: 40px;
 }
 
 .hero span{
@@ -21,7 +21,6 @@
     gap: 200px;
     align-items: center;
     
-
 }
 .choose button{
     height: 150px;
@@ -29,6 +28,50 @@
     border: 5px solid rgba(230, 230, 250, 0.644);
     border-radius: 10px;
     font-size:x-large;
+}
 
+.scoreboard{
+    background-color: rgb(245, 235, 221);
+    margin-top: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.who{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    gap: 500px;
+    font-weight:bold;
 
+}
+.score{
+    display: flex;
+    margin-top: 70px;
+    justify-content: center;
+    gap: 500px;
+    height: 200px;
+    padding-top: ;
+
+}
+.score div{
+    background-color: azure;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+    border-radius: 10px;
+}
+
+#you{
+    margin-left: 30px;
+
+}
+#comp{
+    margin-left: 10px;
+}
+
+.who{
+    margin-top: 20px;
 }
