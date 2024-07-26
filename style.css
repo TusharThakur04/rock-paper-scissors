@@ -74,3 +74,15 @@
 .who{
     margin-top: 20px;
 }
+
+.announce{
+    margin-top: 3px;
+    background-color: rgb(245, 227, 232);
+    height: 219px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    font-size: x-large;
+    font-family:monospace;
+
+}
