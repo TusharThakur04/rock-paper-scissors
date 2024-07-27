@@ -77,12 +77,27 @@
 
 .announce{
     margin-top: 3px;
+    padding-top: 20px;
     background-color: rgb(245, 227, 232);
-    height: 219px;
+    height: 200px;
     display: flex;
-    justify-content: center;
-    align-items: center; 
+    align-items: center;
+    gap: 60px;
+    flex-direction: column;
     font-size: x-large;
     font-family:monospace;
 
+}
+.chose{
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+}
+.chose div{
+    height: 40px;
+    background-color: rgb(224, 115, 142);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
