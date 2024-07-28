@@ -1,9 +1,3 @@
-
-
-
-    
-// console.log(`Final Scores: Your: ${humanScore}, Computer: ${computerScore}`);
-
 document.addEventListener("DOMContentLoaded" ,()=>{
     let computerScore = 0
     let humanScore = 0 ;
@@ -26,41 +20,47 @@ switch(a){
     
     function playRound( ){
         computerChoice = getComputerChoice() ;
-    
-        if(computerChoice === humanChoice){
-            
-        }
-        else if (computerChoice==="rock"){
-            if(humanChoice==="paper"){
-                humanScore++ ;
-                console.log("You win!");
+        if(humanScore < 5 && computerScore < 5){
+            if(computerChoice===humanChoice){
+
             }
-            else{
-                computerScore++ ;
-                console.log("You lose!") ;
-            }
-        }
-            else if (computerChoice==="paper"){
-                if(humanChoice==="scissors"){
-                    humanScore++ ;
-                    console.log("You win!");
+            else if (computerChoice==="rock"){
+                if(humanChoice==="paper"){
+                    humanScore++ ;    
                 }
+
                 else{
-                    computerScore++;
-                    console.log("You lose!");
+                    computerScore++ ;
+                    console.log("You lose!") ;
                 }
             }
-            else if (computerChoice==="scissors"){
-                if(humanChoice==="rock"){
-                    humanScore++ ;
-                    console.log("You win!");
+                else if (computerChoice==="paper"){
+                    if(humanChoice==="scissors"){
+                        humanScore++ ;
+                        console.log("You win!");
+                    }
+                    else{
+                        computerScore++;
+                        console.log("You lose!");
+                    }
                 }
-                else{
-                    computerScore++;
-                    console.log("You lose!");
+                else if (computerChoice==="scissors"){
+                    if(humanChoice==="rock"){
+                        humanScore++ ;
+                        console.log("You win!");
+                    }
+                    else{
+                        computerScore++;
+                        console.log("You lose!");
+                    }
                 }
-            }
-    
+        
+
+        }
+
+
+
+
     }
             
     const rock = document.querySelector("#rock") ;
@@ -73,28 +73,80 @@ switch(a){
 
     rock.addEventListener("click" , (e)=>{
         humanChoice = "rock"; 
-        // console.log(e.target.textContent);
         playRound() ;
         yChoice.textContent = e.target.id ;
         cChoice.textContent = computerChoice ;
+        yourScore.textContent = humanScore ;
+        compScore.textContent = computerScore ;
+        if (humanScore ===5 ) {
+            let won = document.querySelector(".won");
+            won.textContent = "You won";
+            setTimeout(() => {
+                alert("Refresh to start again");
+            }, 20);
+            } 
+            else if(computerScore===5) {
+                let won = document.querySelector(".won");
+                won.textContent = "Computer Won";
+                setTimeout(() => {
+                    alert("Refresh to start again");
+                }, 20);
+            }
     })
     paper.addEventListener("click" , (e)=>{
         humanChoice = "paper";
         playRound() ;
         yChoice.textContent = e.target.id ;
         cChoice.textContent = computerChoice ;
+        yourScore.textContent = humanScore ;
+        compScore.textContent = computerScore ;
+        if (humanScore ===5 ) {
+            let won = document.querySelector(".won");
+            won.textContent = "You won";
+            setTimeout(() => {
+                alert("Refresh to start again");
+            }, 20);
+            } 
+            else if(computerScore===5) {
+                let won = document.querySelector(".won");
+                won.textContent = "Computer Won";
+                setTimeout(() => {
+                    alert("Refresh to start again");
+                }, 20);
+            }
     });
     scissors.addEventListener("click" , (e)=>{
         humanChoice = "scissors"; 
         playRound() ;
         yChoice.textContent = e.target.id ;
         cChoice.textContent = computerChoice ;
+        yourScore.textContent = humanScore ;
+        compScore.textContent = computerScore ;
+        
+        if (humanScore ===5 ) {
+            let won = document.querySelector(".won");
+            won.textContent = "You won";
+            setTimeout(() => {
+                alert("Refresh to start again");
+            }, 20);
+            } 
+            else if(computerScore===5) {
+                let won = document.querySelector(".won");
+                won.textContent = "Computer Won";
+                setTimeout(() => {
+                    alert("Refresh to start again");
+                }, 20);
+            }
     })
-    
+
+
     
 
 
+    
+    
 })
+
 
 
 
